@@ -1,0 +1,100 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #444;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+  display: block;
+}
+
+.navbar ul li a:hover {
+  background-color: #555;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.main-content,
+.sidebar {
+  padding: 1rem;
+  background-color: #f4f4f4;
+  margin: 1rem;
+}
+
+/* Desktop Layout */
+@media (min-width: 768px) {
+  .main-content {
+    flex: 3;
+  }
+
+  .sidebar {
+    flex: 1;
+  }
+}
+
+/* Tablet Layout */
+@media (max-width: 767px) {
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .main-content,
+  .sidebar {
+    flex: 100%;
+  }
+}
+
+/* Mobile Layout */
+@media (max-width: 480px) {
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .main-content,
+  .sidebar {
+    flex: 100%;
+    margin: 0;
+  }
+
+  header {
+    font-size: 1.5rem;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+  }
+}
