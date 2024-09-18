@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive UI Components</title>
+    <link rel="stylesheet" href="Task2.css" />
+    <!-- Link to CSS file -->
+  </head>
+  <body>
+    <div class="container">
+      <h1>Interactive UI Components</h1>
+
+      <!-- Slider -->
+      <div class="slider-container">
+        <h2>Slider</h2>
+        <input type="range" min="0" max="100" value="50" id="slider" />
+        <p>Slider Value: <span id="slider-value">50</span></p>
+      </div>
+
+      <!-- Modal -->
+      <h2>Modal</h2>
+      <button id="open-modal" class="btn">Open Modal</button>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span id="close-modal" class="close">&times;</span>
+          <p>This is a beautiful modal window.</p>
+        </div>
+      </div>
+
+      <!-- Accordion -->
+      <h2>Accordion</h2>
+      <button class="accordion">Accordion Section 1</button>
+      <div class="panel">
+        <p>This is the content for section 1.</p>
+      </div>
+
+      <button class="accordion">Accordion Section 2</button>
+      <div class="panel">
+        <p>This is the content for section 2.</p>
+      </div>
+    </div>
+
+    <script src="Task2.js"></script>
+    <!-- Link to JavaScript file -->
+  </body>
+</html>
